@@ -1,0 +1,18 @@
+docker login demo.goharbor.io --username <> --password ""
+docker build -t demo.goharbor.io/weiharbor/demonginx:0.0.1.RELEASE .
+
+docker container run -d -p 8000:80 -v ~/Library/CloudStorage/OneDrive-WorldcomExchangeInc/DevOps/Nginx/templates/:/usr/share/nginx/html/ --name my-nginx demo.goharbor.io/weiharbor/demonginx:latest
+
+docker ps
+docker ps -a
+docker rm 6429a02b33e4
+
+docker container run -d -p 8000:80 --name my-nginx demo.goharbor.io/weiharbor/demonginx:0.0.1.RELEASE
+
+docker push demo.goharbor.io/weiharbor/demonginx:0.0.1.RELEASE
+
+kubectl run demonginx --image=weiharbor/demonginx:demonginx:0.0.1.RELEASE
+Kubectl get po
+kubectl expose pod demonginx --name=demonginxsvc --port=80
+kubectl get svc
+kubectl port-forward service/demonginxsvc 7080:80
