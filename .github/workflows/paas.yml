@@ -1,0 +1,10 @@
+name: PaaS
+
+on: [push]
+
+jobs:
+    auto-assign:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'PaaS-Steps'
+              uses: Daniel-Perrinez/PaaS@v0.0.1
