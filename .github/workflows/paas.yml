@@ -3,7 +3,7 @@ name: PaaS
 on: [push]
 
 jobs:
-    auto-assign:
+    Run-PaaS-Steps:
         runs-on: ubuntu-latest
         steps:
             - name: 'PaaS-Steps'
