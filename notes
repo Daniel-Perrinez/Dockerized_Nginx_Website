@@ -40,18 +40,6 @@ kubectl port-forward nginx-deployment-986d8966-kl7wp 8080:80
 kubectl port-forward service/nginx-website-svc 8080:80
 
 
-
-
-
-export AWS_DEFAULT_PROFILE=Daniel-Perrinez-Sandbox
-export AWS_PROFILE=Daniel-Perrinez-Sandbox
-export AWS_ACCESS_KEY_ID="ASIA5FTY746FIDZA4UZC"
-export AWS_SECRET_ACCESS_KEY="Bk7WE5Vntqr2GVC+GFcWuRWcYRduCwnU/HuWZfN6"
-export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjENf//////////wEaCXVzLWVhc3QtMSJHMEUCIGVtnOl3Q47TAvhQ3yRu23VrHSQYlVta9+kK3rBM58RBAiEAr+R/YMsgyNxoijo54Qjl7pyjRQU5QM9Bmf9lCWCpmhQqlQMIj///////////ARAAGgw5MDU0MTgxMDY3NjIiDFWz4yzgw8rKJukiLirpAuRoCvLaPz+r1J1FaPP9xiZaBfXCa/lUDoX9q43NX1HWV5mT0LloWJ/Z/ZgtQS6ArqImhrN2KogyxlX1T04cC+pUQHVr4ZpcpYLyRoC89zg/r12ByWJilFpN4n+9eNiK4EsackUQUapcETXPsg8pHpjfDK4u4ISlbMmb2OOaAukgJ+mSOcxcj6Tl6tCiffC0DjtRzEpYazKxfd1bOV3FevETkakKuWFpAkFT6XAXzKq8BzyP+yGKyjGm2THV7Uhsf28oKeU6s4KTAtJGT0Er3W7/veJXz9t9I9U2mb4ornOc1L+HE8fG9Y/4AJ6SHpb+gzTWtzO44zvwq8eNmifnsVsDowMsYZkN4fRtbz92Na1JxMHL0GYncYrS1Afy9df55KqBYFTKvYtwnDLI1diotSuJUD4MercvdDFVNrqRSmbsm4W1jUJgh9c/TP6uBdGcG8Ly/IX3PAF5EDGDF5x2ueP32YFyqbqnoQEwl9vJrQY6pgEATAPqp206r07bn1FkBFLh7Qh259Ou8mWHDQwCK659VD9PMD3B9Bigj4zPoBjkgMXlNqelaDdHAW+FS9lY5CvUL2bL0nP5Gge2GFHoONk74zv8cNp3j1rFQN7D32qDtaBfh9XmTd86x0DmeGQL3432kEdx1TqLs77dZvV8swmrhIIyxzVAsWU4DDDXaRGP1B54IE0TkWZQsbB0kf2gZ+g3P1T7bV8G"
-
-
-
-
 docker buildx build --platform linux/amd64 -t d1v3/nginx_website:0.0.2.RELEASE .
 docker container run -d -p 8000:80 --name my-nginx d1v3/nginx_website:0.0.2.RELEASE
 docker push docker.io/d1v3/nginx_website:0.0.2.RELEASE
