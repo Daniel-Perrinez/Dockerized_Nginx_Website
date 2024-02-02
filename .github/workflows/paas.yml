@@ -4,7 +4,5 @@ on: [push]
 
 jobs:
     Run-PaaS-Steps:
+        uses: Daniel-Perrinez/PaaS/.github/workflows/PaaS.yml@main
         runs-on: ubuntu-latest
-        steps:
-            - name: 'PaaS-Steps'
-              uses: Daniel-Perrinez/PaaS/.github/workflows/PaaS.yml@main
