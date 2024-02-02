@@ -1,13 +1,7 @@
 name: PaaS
 
 on: [push, pull_request]
-# pull_request:
-#     types:
-#       - opened
-#     branches:
-#       - 'releases/**'
 
 jobs:
     Run-PaaS-Steps:
         uses: Daniel-Perrinez/PaaS/.github/workflows/PaaS.yml@main
-        runs-on: ubuntu-latest
