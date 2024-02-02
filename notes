@@ -13,7 +13,6 @@ docker login --username <> --password ""
 docker push docker.io/d1v3/nginx_website:0.0.1.RELEASE
 
 
-
 # Test
 # ---------------
 docker build -t d1v3/nginx_website:0.0.1.RELEASE .
