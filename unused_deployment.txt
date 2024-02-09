@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: d1v3/nginx_website:0.0.2.RELEASE
+          image: danielperrinez/nginx_website:0.0.2.RELEASE
           ports:
             - containerPort: 80
           resources:
