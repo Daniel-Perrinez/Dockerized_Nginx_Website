@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: d1v3/nginx_website
+  repository: danielperrinez/nginx_website
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.0.2.RELEASE"
